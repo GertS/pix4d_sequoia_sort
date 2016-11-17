@@ -129,3 +129,4 @@ for root, dirs, files in os.walk(options.input_dir):
     for file in files:
         if file.endswith(".JPG") or file.endswith(".TIF"):
             check_images(options, os.path.join(root,file),rgb_dir,msp_dir)
+print "Process finished"
